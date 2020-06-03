@@ -47,13 +47,15 @@
 
     <script>
       (function () {
-        const ilbuni = document.querySelector(".ilbuni.c");
+        const characters = document.querySelector(".characters");
 
-        function clickInbuniHandler() {
-          ilbuni.classList.toggle("special");
+        function clickHandler(e) {
+          // console.log("this");
+          // console.log("e.currentTarget");
+          console.log("e.target");
         }
 
-        ilbuni.addEventListener("click", clickInbuniHandler);
+        characters.addEventListener("click", clickHandler);
       })();
     </script>
   </body>

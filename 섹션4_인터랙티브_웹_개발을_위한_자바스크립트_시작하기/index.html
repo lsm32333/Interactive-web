@@ -45,6 +45,16 @@
       <img src="images/ilbuni_3.png" alt="일분이" />
     </div>
 
-    <script></script>
+    <script>
+      (function () {
+        const ilbuni = document.querySelector(".ilbuni.c");
+
+        function clickInbuniHandler() {
+          ilbuni.classList.toggle("special");
+        }
+
+        ilbuni.addEventListener("click", clickInbuniHandler);
+      })();
+    </script>
   </body>
 </html>
